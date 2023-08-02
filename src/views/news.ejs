@@ -7,14 +7,23 @@
     <title>HomePage</title>
 </head>
 <body>
-    <h1>Welcome To Latest TechNews</h1>
-   
-    <%articles.forEach(function(article){ %>
-        <h2><%=article.author;%></h2>
-        <h3><%=article.content;%></h3>
-        <h4><%=article.publishedAt;%></h4>
-        
-    <% }) %>
+    <header class="header">
+        <div class="header__logo">Syz</div>
+        <div class="search">Search</div>
 
+    </header>
+
+    <div class="wrapper">
+   <div class="news">
+    <%articles.forEach(function(article){ %>
+        <a href="#" class="card">
+            <img src="<%= article.urlToImage %>" alt="">
+        <h2><%=article.title;%></h2>
+        <p><%=article.description;%></p>
+        </a>
+       
+    <% }) %>
+    </div>
+    </div>
 </body>
 </html>
