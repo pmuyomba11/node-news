@@ -8,6 +8,7 @@ const newsRouter = require('./src/routes/news');
 
 
 //Static files
+
 app.use(express.static('public'));
 app.use('/css', express.static(__dirname + 'public/css'));
 app.use('/imgs', express.static(__dirname + 'public/imgs'));
@@ -18,7 +19,8 @@ app.set('views', './src/views')
 
 
 //Middleware
-app.use('/news', newsRouter);
+app.use('/', newsRouter);
+
 
 
 
