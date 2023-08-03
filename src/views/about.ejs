@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <title>HomePage</title>
 </head>
 <body>
@@ -14,17 +14,13 @@
     </header>
 
     <div class="wrapper">
-   <div class="news">
+   <div class="news-single">
     
-    <%articles.forEach(function(article, index){ %>
-        <a href="/article/<%= article.author %>" class="card">
-
-            <img src="<%= article.urlToImage %>" alt="">
-            <h2><%=article.title;%></h2>
-             <p><%=article.description;%></p>
-        </a>
+   
+   
+<a href="/">&larr; Back</a>
+        
        
-    <% }) %>
     </div>
     </div>
 </body>

@@ -17,9 +17,15 @@ app.use('/js', express.static(__dirname + 'public/js'));
 app.set("view engine", "ejs"); //setting ejs as view engine for rendering
 app.set('views', './src/views')
 
-
 //Middleware
+app.use(express.urlencoded({extended: true}))
+
+
+//Routes
 app.use('/', newsRouter);
+app.use('/article', newsRouter);
+
+
 
 
 
