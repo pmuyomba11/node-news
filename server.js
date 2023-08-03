@@ -1,4 +1,5 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 require('dotenv').config();
 const app = express();
 const colors = require('colors');
@@ -18,7 +19,7 @@ app.set("view engine", "ejs"); //setting ejs as view engine for rendering
 app.set('views', './src/views')
 
 //Middleware
-app.use(express.urlencoded({extended: true}))
+app.use(bodyParser.urlencoded({extended: true}))
 
 
 //Routes

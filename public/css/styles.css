@@ -26,17 +26,17 @@ h2 {
     margin-bottom: 10px;
 }
 
-.search {
+
     input[type=text]{
-        padding: 6px;
+        padding: 8px;
         border: none
     }
 
-}
+
 
 input[type=submit]{
     float:right;
-    padding:  6px 10px;
+    padding:  8px 10px;
     border: none;
     cursor: pointer
 }
